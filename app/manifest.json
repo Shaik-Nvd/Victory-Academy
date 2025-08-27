@@ -1,0 +1,21 @@
+{
+  "name": "Victory Academy - Job Oriented Training Institute",
+  "short_name": "Victory Academy",
+  "description": "Learn in-demand skills with hands-on, job-oriented courses. Get 100% job assistance and start your career today.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d97706",
+  "icons": [
+    {
+      "src": "/app/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/app/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
