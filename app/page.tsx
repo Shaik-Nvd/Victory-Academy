@@ -575,58 +575,64 @@ Message: ${message || "(none)"}`
         ref={heroRef}
         className="relative py-16 md:py-24 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 overflow-hidden"
       >
-        {/* Watermark background */}
-        <div className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center" aria-hidden="true">
-          <div
-            className="w-[120vw] max-w-[900px] aspect-square opacity-15 md:opacity-15 mix-blend-multiply [mask-image:radial-gradient(circle,black,transparent_70%)]"
-            style={{
-              backgroundImage:
-                'url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%28Square%29-bEGE14KMWTA92U8jWpleyn4ai0vRrD.png")',
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              filter: "grayscale(100%)",
-            }}
-          />
-        </div>
-
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center relative z-10">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Badge className="bg-amber-600">Job Oriented</Badge>
-              <Badge variant="outline" className="border-amber-600 text-amber-700">
-                Job Assistance
-              </Badge>
-              <Badge variant="secondary" className="bg-white text-slate-700">
-                200+ Courses
-              </Badge>
-              <Badge variant="secondary" className="bg-white text-slate-700">
-                6+ Years
-              </Badge>
-              <Badge variant="secondary" className="bg-white text-slate-700">
-                ISO Certified
-              </Badge>
+          <div className="relative">
+            {/* Scoped watermark behind the headline (left column only) */}
+            <div
+              className="pointer-events-none absolute inset-0 flex items-start justify-center pt-4 md:pt-6"
+              aria-hidden="true"
+            >
+              <div
+                className="w-full max-w-[620px] aspect-square opacity-15 mix-blend-multiply [mask-image:radial-gradient(circle at 50% 35%,black,transparent_70%)]"
+                style={{
+                  backgroundImage:
+                    'url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%28Square%29-bEGE14KMWTA92U8jWpleyn4ai0vRrD.png")',
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "top center",
+                  filter: "grayscale(100%)",
+                }}
+              />
             </div>
-            <h1 className="text-4xl md:text-6xl font-black text-slate-800 mb-4">Skill up with Victory Academy</h1>
-            <p className="text-lg md:text-xl text-slate-600 mb-6 max-w-xl">
-              Learn in-demand skills with hands-on, job-oriented courses. Get 100% job assistance and start your career
-              today.
-            </p>
-            <div className="flex gap-3">
-              <Link
-                href="/programs"
-                className="inline-flex items-center px-4 py-2 rounded-md bg-amber-600 hover:bg-amber-700 text-white"
-              >
-                Explore Programs
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-              <Button
-                variant="outline"
-                className="border-amber-600 text-amber-700 bg-transparent"
-                onClick={() => scrollToSection("contact")}
-              >
-                Contact Us
-              </Button>
+
+            {/* Keep the original text/content above the watermark */}
+            <div className="relative">
+              <div className="flex items-center gap-2 mb-4">
+                <Badge className="bg-amber-600">Job Oriented</Badge>
+                <Badge variant="outline" className="border-amber-600 text-amber-700">
+                  Job Assistance
+                </Badge>
+                <Badge variant="secondary" className="bg-white text-slate-700">
+                  200+ Courses
+                </Badge>
+                <Badge variant="secondary" className="bg-white text-slate-700">
+                  6+ Years
+                </Badge>
+                <Badge variant="secondary" className="bg-white text-slate-700">
+                  ISO Certified
+                </Badge>
+              </div>
+              <h1 className="text-4xl md:text-6xl font-black text-slate-800 mb-4">Skill up with Victory Academy</h1>
+              <p className="text-lg md:text-xl text-slate-600 mb-6 max-w-xl">
+                Learn in-demand skills with hands-on, job-oriented courses. Get 100% job assistance and start your
+                career today.
+              </p>
+              <div className="flex gap-3">
+                <Link
+                  href="/programs"
+                  className="inline-flex items-center px-4 py-2 rounded-md bg-amber-600 hover:bg-amber-700 text-white"
+                >
+                  Explore Programs
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+                <Button
+                  variant="outline"
+                  className="border-amber-600 text-amber-700 bg-transparent"
+                  onClick={() => scrollToSection("contact")}
+                >
+                  Contact Us
+                </Button>
+              </div>
             </div>
           </div>
 
