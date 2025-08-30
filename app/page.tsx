@@ -575,7 +575,22 @@ Message: ${message || "(none)"}`
         ref={heroRef}
         className="relative py-16 md:py-24 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 overflow-hidden"
       >
-        <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+        {/* Watermark background */}
+        <div className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center" aria-hidden="true">
+          <div
+            className="w-[120vw] max-w-[900px] aspect-square opacity-15 md:opacity-15 mix-blend-multiply [mask-image:radial-gradient(circle,black,transparent_70%)]"
+            style={{
+              backgroundImage:
+                'url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%28Square%29-bEGE14KMWTA92U8jWpleyn4ai0vRrD.png")',
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              filter: "grayscale(100%)",
+            }}
+          />
+        </div>
+
+        <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center relative z-10">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Badge className="bg-amber-600">Job Oriented</Badge>
