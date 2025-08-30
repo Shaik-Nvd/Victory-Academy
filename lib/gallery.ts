@@ -227,4 +227,20 @@ export const excellenceAcademyAwardImages: GalleryImage[] = [
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-25%20at%206.55.30%20PM-aV1aiuhHBlEqEQ1D5hk9Vx6G1DBl6f.jpeg",
     alt: "Excellence Academy Award - Rear view of dancers in formation facing a large LED screen showing a portrait",
   },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-25%20at%206.55.27%20PM-spng11NSqzXHzg7sDnRYML8MWngI27.jpeg",
+    alt: "Excellence Academy Award - Awardee posing at the entrance holding a circular memento and certificate; event hall visible through doors",
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-25%20at%206.55.34%20PM-RyMknacrYY0k5TC2PBnwlig8Oc5rXg.jpeg",
+    alt: "Excellence Academy Award - Media interview outside the venue at night; microphones and camera recording while awardee holds the memento",
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-25%20at%206.55.28%20PM-tlMsCXVgOt364xnJeqw6U2vKkhoKIm.jpeg",
+    alt: "Excellence Academy Award - Awardee at venue entrance with circular memento and certificate; event poster on the wall",
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-08-25%20at%206.55.33%20PM%20%281%29-IzDw9ome4PQtYxdqqEmamrt1f9Nqp0.jpeg",
+    alt: "Excellence Academy Award - Parent holding trophy with child outside the venue; child wearing celebratory garlands",
+  },
 ]
