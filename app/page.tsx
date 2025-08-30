@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import GallerySection from "@/components/gallery"
 
 import { useEffect, useMemo, useRef, useState } from "react"
 import Link from "next/link"
@@ -315,6 +316,7 @@ Phone: ${phone}
 Email: ${email}
 Course: ${course}
 Message: ${message || "(none)"}`
+
         const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`
         setWaUrl(url)
         window.open(url, "_blank")
@@ -550,6 +552,9 @@ Message: ${message || "(none)"}`
               <button onClick={() => scrollToSection("achievements")} className="hover:text-amber-600 text-slate-700">
                 Highlights
               </button>
+              <button onClick={() => scrollToSection("gallery")} className="hover:text-amber-600 text-slate-700">
+                Gallery
+              </button>
               <button onClick={() => scrollToSection("contact")} className="hover:text-amber-600 text-slate-700">
                 Contact
               </button>
@@ -673,6 +678,7 @@ Message: ${message || "(none)"}`
           </div>
         </div>
       </section>
+      <GallerySection />
       <ReviewsSection />
 
       {/* Trust and Credentials */}
